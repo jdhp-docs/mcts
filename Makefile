@@ -1,11 +1,11 @@
-SRCSLIDES=slides_packages.tex commands.tex slides_mcts.tex
+SRCSLIDES=slides_packages.tex commands.tex slides_sections.tex
 SRCTIKZ=
 
 all: mcts_slides.pdf
 
-mcts_slides.pdf: $(SRCSLIDES) $(SRCTIKZ) mcts_slides.tex
-	pdflatex mcts_slides.tex
-	pdflatex mcts_slides.tex
+mcts_slides.pdf: $(SRCSLIDES) $(SRCTIKZ) slides.tex
+	pdflatex slides.tex
+	pdflatex slides.tex
 
 clean:
 	@echo "suppression des fichiers de compilation"
