@@ -1,4 +1,4 @@
-SRCSLIDES=commands.tex main.tex content/*.tex
+SRCSLIDES=macros.tex main.tex content/*.tex
 SRCTIKZ=
 
 all: mcts_slides_en.pdf
