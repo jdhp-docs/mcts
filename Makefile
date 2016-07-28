@@ -1,4 +1,4 @@
-SRCSLIDES=commands.tex mcts_slides_en.tex slides/mcts_en/*.tex
+SRCSLIDES=commands.tex mcts_slides_en.tex content/*.tex
 SRCTIKZ=
 
 all: mcts_slides_en.pdf
