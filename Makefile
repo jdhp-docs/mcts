@@ -1,11 +1,11 @@
-SRCSLIDES=commands.tex mcts_slides_en.tex content/*.tex
+SRCSLIDES=commands.tex main.tex content/*.tex
 SRCTIKZ=
 
 all: mcts_slides_en.pdf
 
 mcts_slides_en.pdf: $(SRCSLIDES) $(SRCTIKZ)
-	pdflatex mcts_slides_en.tex
-	pdflatex mcts_slides_en.tex
+	pdflatex  -jobname=mcts_slides_en main.tex
+	pdflatex  -jobname=mcts_slides_en main.tex
 
 clean:
 	@echo "suppression des fichiers de compilation"
