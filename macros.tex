@@ -1,28 +1,4 @@
-%\renewcommand{\vec}[1]{\ensuremath{\boldsymbol{#1}}} % bold vectors
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-% Pour desactiver temporairement les images (compile beaucoup plus vite)
-%\renewcommand{\includegraphics}[2][]{\null}
-
-% Symboles mathématiques
-
-\def\bbbr{{\rm I\!R}} % reel Zahlen
-\newcommand{\N}{\mathbb{N}}
-\newcommand{\Z}{\mathbb{Z}}
-\newcommand{\Q}{\mathbb{Q}}
-\newcommand{\R}{{\bbbr}{}}
-\newcommand{\C}{\mathbb{C}}
-\newcommand{\K}{\mathbb{K}}
-
-\newcommand{\mb}[1]{\mathbb{#1}}
-\newcommand{\mc}[1]{\mathcal{#1}}
-\newcommand{\mfrac}[1]{\mathfrak{#1}}
-
-\newcommand{\ch}{\mathop{\mathrm{ch}}\nolimits}
-\newcommand{\sh}{\mathop{\mathrm{sh}}\nolimits}
-
-%%% Shortcuts
+% Shortcuts %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \newcommand{\mdp}{{\em Markov Decision Processes}}
 \newcommand{\mcts}{{\em Monte-Carlo Tree Search}}
@@ -34,12 +10,7 @@
 \newcommand{\rave}{{\em Rapid Action Value Estimates}}
 \newcommand{\uc}{{\em Unit Commitment}}
 
-%%% Commandes générales
-
-\newcommand{\vs}[1]{\boldsymbol{#1}} % vector symbol (\boldsymbol, \textbf or \vec)
-\newcommand{\ms}[1]{\boldsymbol{#1}} % matrix symbol (\boldsymbol, \textbf)
-
-\newcommand{\scut}{\text{sc}}        % shortcut symbol
+% Notation %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \newcommand{\state}{\vs{s}}
 \newcommand{\decision}{\vs{a}}
@@ -57,27 +28,3 @@
 \newcommand{\substatespace}{\mathcal{S}'}
 \newcommand{\decisionspace}{\mathcal{A}}
 \newcommand{\subdecisionspace}{\mathcal{A}'}
-
-\newcommand{\deriv}[2]{\frac{d {#1}}{d {#2}}}  % derivative
-\newcommand{\pd}[2]{\frac{\partial {#1}}{\partial {#2}}}  % partial derivative
-
-\newcommand{\then}{\Rightarrow}
-\newcommand{\alias}{\triangleq}
-%\newcommand{\argmin}{\operatornamewithlimits{argmin}}
-
-%\newcommand{\reels}{\mathbb{R}}
-%\newcommand{\equiv}{\Leftrightarrow}
-%\renewcommand{\det}[1]{\det({#1})}
-%\numberwithin{equation}{subsection}
-%\setlength\arraycolsep{5.4pt}
-%\setlength\arrayrulewidth{15.4pt}
-%\renewcommand\arraystretch{1.5}
-
-\newenvironment{jmatrix}{\renewcommand\arraystretch{1.5} \begin{pmatrix}}{\end{pmatrix}}
-
-\newcommand{\todo}[1][\dots]{\textbf{[TODO : #1]}}  % todo mark
-
-\newcommand{\HRule}{\rule{\linewidth}{0.5mm}}
-
-\newcommand{\dontforget}[1]{\textcolor{red}{#1}}
-
