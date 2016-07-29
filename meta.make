@@ -1,1 +1,1 @@
-FILE_BASE_NAME=mcts_slides_en
+FILE_BASE_NAME=mcts_slides
