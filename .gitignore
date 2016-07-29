@@ -1,8 +1,30 @@
+# Beamer generated files ######################################################
+
 *.aux
+*.bbl
+*.blg
+*.dvi
+*.lof
 *.log
+*.lot
 *.nav
 *.out
-*.pdf
 *.snm
 *.toc
-mcts_slides_en.pdf
+*.vrb
+*.pdf
+!figs/*.pdf
+
+# COMMON ######################################################################
+
+# Vim swap files
+*.swp
+
+# Emacs temporary files
+*~
+
+# MacOSX Thumbnail files
+.DS_Store
+
+# Windows Thumbnail files
+Thumbs.db

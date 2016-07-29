@@ -2,9 +2,9 @@
 `An Introduction to Monte-Carlo Tree Search (MCTS)`_
 ====================================================
 
-Copyright (c) 2012,2014,2015 Jeremie DECOCK (http://www.jdhp.org)
+Copyright (c) 2012,2014,2015,2016 Jeremie DECOCK (http://www.jdhp.org)
 
-* Web site: http://www.jdhp.org/articles_en.html#mcts
+* Web site: http://www.jdhp.org/tutorials_en.html#mcts
 * Source code: https://github.com/jdhp-docs/mcts
 
 Description
@@ -23,5 +23,5 @@ terms and conditions of the `MIT License`_.
 
 
 .. _MIT License: http://opensource.org/licenses/MIT
-.. _An Introduction to Monte-Carlo Tree Search (MCTS): http://www.jdhp.org/articles_en.html#mcts
+.. _An Introduction to Monte-Carlo Tree Search (MCTS): http://www.jdhp.org/tutorials_en.html#mcts
 
