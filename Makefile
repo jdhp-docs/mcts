@@ -8,6 +8,7 @@ all: $(FILE_BASE_NAME).pdf
 
 SRCSLIDES=macros_common.tex\
 		  macros.tex\
+		  meta.tex\
 		  bibliography.bib\
 		  setup_packages.tex\
 		  setup_package_listings.tex\
@@ -48,6 +49,23 @@ $(FILE_BASE_NAME)_handout.pdf: $(SRCSLIDES) $(SRCTIKZ) handout.tex
 publish: jdhp
 
 jdhp:$(FILE_BASE_NAME).pdf
+	
+	########
+	# HTML #
+	########
+	
+	# JDHP_DOCS_URI is a shell environment variable that contains the
+	# destination URI of the HTML files.
+	@if test -z $$JDHP_DOCS_URI ; then exit 1 ; fi
+	
+	# Copy HTML
+	# TODO...
+	
+	
+	#######
+	# PDF #
+	#######
+	
 	# JDHP_DL_URI is a shell environment variable that contains the destination
 	# URI of the PDF files.
 	@if test -z $$JDHP_DL_URI ; then exit 1 ; fi
@@ -58,11 +76,11 @@ jdhp:$(FILE_BASE_NAME).pdf
 ## CLEAN ######################################################################
 
 clean:
-	@echo "suppression des fichiers de compilation"
+	@echo "Remove generated files"
 	@rm -f *.log *.aux *.dvi *.toc *.lot *.lof *.out *.nav *.snm *.bbl *.blg *.vrb
 
 init: clean
-	@echo "suppression des fichiers cibles"
+	@echo "Remove target files"
 	@rm -f $(FILE_BASE_NAME).pdf
 	@rm -f $(FILE_BASE_NAME)_notes.pdf
 	@rm -f $(FILE_BASE_NAME)_handout.pdf
